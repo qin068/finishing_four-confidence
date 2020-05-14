@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +8,79 @@
     <title>欢乐钓鱼</title>
     <link type="text/css" href="style/index.css" rel="stylesheet" />
     <link type="text/css" href="style/common.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="script/zepto.min.js"></script>
     <script src="script/common.js"></script>
+    <style>
+		.demo{ 
+			float: left;
+			background-image: url(../background.jpg); 
+			width: 42%;
+		}
+		.text-effect{
+		    color: white;
+		    font-family: 'Cabin Sketch', cursive;
+		    font-size: 30px;
+		}
+		.text-effect span1{
+			width: 330px;
+			position:absolute;
+            top:210px;
+			left: 92px;
+			word-wrap:break-word;
+            word-break:break-all;
+            overflow: hidden;
+
+		}
+
+		.text-effect span2{
+			width: 400px;
+			position:absolute;
+            top:460px;
+			left: 70px;
+			word-wrap:break-word;
+            word-break:break-all;
+            overflow: hidden;
+        }
+        
+        .body{
+            float: right;
+            position:absolute;
+            left: 520px;
+        }
+
+        .icon{
+            
+            width: 35px;
+        }
+        
+
+		
+	</style>
 </head>
-<body class="body">
+<body>
+
+    <div class="demo" style="min-height:820px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-effect">
+						<span1>1.马克思主义中国化理论成果的精髓是</span1>
+					</div>
+					<div class="text-effect">
+						<span2>A.理论联系实际  <img class="icon" src="l_1_1.png"><br><br>
+							B.一切从实际出发  <img class="icon" src="l_2_2.png"><br><br>
+							C.在实践中检验和发展真理  <img class="icon" src="l_3_3.png"><br><br>
+							D.实事求是  <img class="icon" src="l_4_4.png">
+                        </span2>
+                        
+					</div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
     <div id="gamediv"></div>
     <input id="bt-game-id" type="hidden" value="fishinglegend">
     <script type="text/javascript" src="./script/plugin/lufylegend-1.9.1.min.js"></script>
@@ -25,5 +94,6 @@
     <script language=javascript>
 
     </script>
+    <div>
 </body>
 </html>
